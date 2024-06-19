@@ -8,14 +8,14 @@
 import SwiftUI
 
 struct NavigatorScreen: View {
-    @State private var selectedIndex: Int = 0
+    @State private var selectedIndex: Int = 1
     var body: some View {
         TabView(selection: $selectedIndex) {
             NavigationItem(title: "Home", icon: "house.fill", content: {
                 Text("Home View")
             }).tag(0)
             NavigationItem(title: "My Bookings", icon: "list.bullet.rectangle.fill", content: {
-                Text("My Bookings View")
+                MyBookingsScreen()
             }).tag(1)
             NavigationItem(title: "Help", icon: "questionmark.bubble.fill", content: {
                 Text("Help View")
@@ -37,9 +37,7 @@ struct NavigationItem<Content: View>: View {
     @ViewBuilder let content: Content
     
     var body: some View {
-        NavigationView() {
-            content.navigationTitle(title).toolbarTitleDisplayMode(.inlineLarge)
-        }
+        NavigationView() {content}
         .tabItem {Label(title, systemImage: icon)}
     }
 }
