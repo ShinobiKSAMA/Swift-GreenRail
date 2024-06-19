@@ -11,6 +11,8 @@
 		8F89F2972C22E2640082C857 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F89F2962C22E2640082C857 /* ContentView.swift */; };
 		8F89F2992C22E2660082C857 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8F89F2982C22E2660082C857 /* Assets.xcassets */; };
 		8F89F29D2C22E2660082C857 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8F89F29C2C22E2660082C857 /* Preview Assets.xcassets */; };
+		8F89F2A52C22E2A00082C857 /* NavigatorScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F89F2A42C22E2A00082C857 /* NavigatorScreen.swift */; };
+		8F89F2A72C22E9DD0082C857 /* MyAccountScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F89F2A62C22E9DD0082C857 /* MyAccountScreen.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +22,8 @@
 		8F89F2982C22E2660082C857 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8F89F29A2C22E2660082C857 /* Swift_GreenRail.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Swift_GreenRail.entitlements; sourceTree = "<group>"; };
 		8F89F29C2C22E2660082C857 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		8F89F2A42C22E2A00082C857 /* NavigatorScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigatorScreen.swift; sourceTree = "<group>"; };
+		8F89F2A62C22E9DD0082C857 /* MyAccountScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAccountScreen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +56,7 @@
 		8F89F2932C22E2640082C857 /* Swift GreenRail */ = {
 			isa = PBXGroup;
 			children = (
+				8F89F2A32C22E2850082C857 /* UI */,
 				8F89F2942C22E2640082C857 /* Swift_GreenRailApp.swift */,
 				8F89F2962C22E2640082C857 /* ContentView.swift */,
 				8F89F2982C22E2660082C857 /* Assets.xcassets */,
@@ -67,6 +72,15 @@
 				8F89F29C2C22E2660082C857 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		8F89F2A32C22E2850082C857 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				8F89F2A42C22E2A00082C857 /* NavigatorScreen.swift */,
+				8F89F2A62C22E9DD0082C857 /* MyAccountScreen.swift */,
+			);
+			path = UI;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,7 +154,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				8F89F2972C22E2640082C857 /* ContentView.swift in Sources */,
+				8F89F2A52C22E2A00082C857 /* NavigatorScreen.swift in Sources */,
 				8F89F2952C22E2640082C857 /* Swift_GreenRailApp.swift in Sources */,
+				8F89F2A72C22E9DD0082C857 /* MyAccountScreen.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
