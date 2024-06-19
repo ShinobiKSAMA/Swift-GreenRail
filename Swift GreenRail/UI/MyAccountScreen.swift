@@ -10,30 +10,26 @@ import SwiftUI
 struct MyAccountScreen: View {
     var body: some View {
         NavigationView {
-            List(content: {
-                Section(content: {
+            List{
+                Section{
                     SettingsTile(icon: "person.crop.circle", title: "Adwait Patil", subTitle: "9212346782")
-                }).padding(.vertical, 8)
-                Section(content: {
-                    WalletCard()
-                }).padding(.horizontal, 8)
-                Section(content: {
+                }.padding(.vertical, 8)
+                Section{WalletCard()}.padding(.horizontal, 8)
+                Section{
                     SettingsTile(icon: "lock.shield", title: "Account Settings")
                     SettingsTile(icon: "creditcard", title: "Saved Cards")
                     SettingsTile(icon: "info.circle", title: "About")
-                }).padding(.vertical, 8)
-                Section(content: {
-                    Text("Log out").foregroundColor(.red)
-                }).padding(.vertical, 4)
-            })
+                }.padding(.vertical, 8)
+                Section{Text("Log out").foregroundColor(.red)}.padding(.vertical, 4)
+            }
+            .listSectionSpacing(.custom(20))
+            .navigationTitle("My Account")
         }
-        .navigationTitle("My Account")
-        .toolbarTitleDisplayMode(.inlineLarge)
     }
 }
 
 #Preview {
-    MyAccountScreen()
+    NavigatorScreen()
 }
 
 struct SettingsTile: View {
@@ -72,8 +68,7 @@ struct WalletCard: View {
                     }
                 ).padding(.vertical, 16)
                 Spacer()
-                Circle()
-                    .frame(width: 24, height: 24, alignment: .topTrailing)
+                Circle().frame(width: 24, height: 24, alignment: .topTrailing)
             })
     }
 }

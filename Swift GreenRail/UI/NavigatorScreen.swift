@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct NavigatorScreen: View {
-    @State private var selectedIndex: Int = 1
+    @State private var selectedIndex: Int = 0
     var body: some View {
         TabView(selection: $selectedIndex) {
             NavigationItem(title: "Home", icon: "house.fill", content: {
@@ -37,7 +37,7 @@ struct NavigationItem<Content: View>: View {
     @ViewBuilder let content: Content
     
     var body: some View {
-        NavigationView() {content}
-        .tabItem {Label(title, systemImage: icon)}
+        content
+            .tabItem {Label(title, systemImage: icon)}
     }
 }

@@ -14,6 +14,7 @@
 		8F89F2A52C22E2A00082C857 /* NavigatorScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F89F2A42C22E2A00082C857 /* NavigatorScreen.swift */; };
 		8F89F2A72C22E9DD0082C857 /* MyAccountScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F89F2A62C22E9DD0082C857 /* MyAccountScreen.swift */; };
 		8F89F2A92C22F8C10082C857 /* MyBookingsScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F89F2A82C22F8C10082C857 /* MyBookingsScreen.swift */; };
+		8F89F2AB2C23434D0082C857 /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F89F2AA2C23434D0082C857 /* HomeScreen.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		8F89F2A42C22E2A00082C857 /* NavigatorScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigatorScreen.swift; sourceTree = "<group>"; };
 		8F89F2A62C22E9DD0082C857 /* MyAccountScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAccountScreen.swift; sourceTree = "<group>"; };
 		8F89F2A82C22F8C10082C857 /* MyBookingsScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyBookingsScreen.swift; sourceTree = "<group>"; };
+		8F89F2AA2C23434D0082C857 /* HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +84,7 @@
 				8F89F2A42C22E2A00082C857 /* NavigatorScreen.swift */,
 				8F89F2A62C22E9DD0082C857 /* MyAccountScreen.swift */,
 				8F89F2A82C22F8C10082C857 /* MyBookingsScreen.swift */,
+				8F89F2AA2C23434D0082C857 /* HomeScreen.swift */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -158,6 +161,7 @@
 			files = (
 				8F89F2A92C22F8C10082C857 /* MyBookingsScreen.swift in Sources */,
 				8F89F2972C22E2640082C857 /* ContentView.swift in Sources */,
+				8F89F2AB2C23434D0082C857 /* HomeScreen.swift in Sources */,
 				8F89F2A52C22E2A00082C857 /* NavigatorScreen.swift in Sources */,
 				8F89F2952C22E2640082C857 /* Swift_GreenRailApp.swift in Sources */,
 				8F89F2A72C22E9DD0082C857 /* MyAccountScreen.swift in Sources */,
