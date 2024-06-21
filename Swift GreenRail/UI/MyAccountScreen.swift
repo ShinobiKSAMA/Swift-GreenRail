@@ -22,8 +22,16 @@ struct MyAccountScreen: View {
                 }.padding(.vertical, 8)
                 Section{Text("Log out").foregroundColor(.red)}.padding(.vertical, 4)
             }
+            .listSectionSeparator(.hidden)
             .listSectionSpacing(.custom(20))
-            .navigationTitle("My Account")
+            .toolbarBackground(.regularMaterial, for: .navigationBar)
+            .toolbar {
+                ToolbarItem(placement: .topBarLeading) {
+                    Text("My Account")
+                        .font(.largeTitle).fontWeight(.bold)
+                        .frame(maxWidth: .infinity, maxHeight: 25, alignment: .leading)
+                }
+            }
         }
     }
 }
@@ -38,8 +46,7 @@ struct SettingsTile: View {
     var subTitle: String? = nil
     
     var body: some View {
-        HStack(content: {
-            Image(systemName: icon)
+        Label(title: {
             VStack(
                 alignment: .leading,
                 content: {
@@ -49,9 +56,9 @@ struct SettingsTile: View {
                     }
                 }
             )
-            Spacer()
-            Image(systemName: "chevron.right").foregroundColor(.gray)
-        })
+        }, icon: {
+            Image(systemName: icon)
+        }).labelStyle(.titleAndIcon)
     }
 }
 

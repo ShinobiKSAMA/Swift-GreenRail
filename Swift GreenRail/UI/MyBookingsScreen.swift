@@ -16,16 +16,25 @@ struct MyBookingsScreen: View {
                 Text("Upcoming").tag(0)
                 Text("Completed").tag(1)
                 Text("Cancelled").tag(2)
-            }.pickerStyle(SegmentedPickerStyle())
+            }
+            .padding()
+            .pickerStyle(SegmentedPickerStyle())
             NavigationView(content: {
                 List(content: {
                     Text("Item")
                 })
-                .listStyle(.plain)
-                .navigationTitle("Bookings")
-                .toolbarTitleDisplayMode(.inlineLarge)
+                .scrollContentBackground(.hidden)
+                .background(.regularMaterial)
+                .toolbarBackground(.clear, for: .navigationBar)
+                .toolbar {
+                    ToolbarItem(placement: .topBarLeading) {
+                        Text("Bookings")
+                            .font(.largeTitle).fontWeight(.bold)
+                            .frame(maxWidth: .infinity, maxHeight: 25, alignment: .leading)
+                    }
+                }
             })
-        }.padding()
+        }.background(.regularMaterial)
     }
 }
 

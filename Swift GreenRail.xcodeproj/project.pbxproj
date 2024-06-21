@@ -15,6 +15,7 @@
 		8F89F2A72C22E9DD0082C857 /* MyAccountScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F89F2A62C22E9DD0082C857 /* MyAccountScreen.swift */; };
 		8F89F2A92C22F8C10082C857 /* MyBookingsScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F89F2A82C22F8C10082C857 /* MyBookingsScreen.swift */; };
 		8F89F2AB2C23434D0082C857 /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F89F2AA2C23434D0082C857 /* HomeScreen.swift */; };
+		8F89F2AE2C254AF10082C857 /* AnimatedPills.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F89F2AD2C254AF10082C857 /* AnimatedPills.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		8F89F2A62C22E9DD0082C857 /* MyAccountScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAccountScreen.swift; sourceTree = "<group>"; };
 		8F89F2A82C22F8C10082C857 /* MyBookingsScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyBookingsScreen.swift; sourceTree = "<group>"; };
 		8F89F2AA2C23434D0082C857 /* HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
+		8F89F2AD2C254AF10082C857 /* AnimatedPills.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatedPills.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 		8F89F2932C22E2640082C857 /* Swift GreenRail */ = {
 			isa = PBXGroup;
 			children = (
+				8F89F2AC2C254AD50082C857 /* Components */,
 				8F89F2A32C22E2850082C857 /* UI */,
 				8F89F2942C22E2640082C857 /* Swift_GreenRailApp.swift */,
 				8F89F2962C22E2640082C857 /* ContentView.swift */,
@@ -87,6 +90,14 @@
 				8F89F2AA2C23434D0082C857 /* HomeScreen.swift */,
 			);
 			path = UI;
+			sourceTree = "<group>";
+		};
+		8F89F2AC2C254AD50082C857 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				8F89F2AD2C254AF10082C857 /* AnimatedPills.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -159,6 +170,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8F89F2AE2C254AF10082C857 /* AnimatedPills.swift in Sources */,
 				8F89F2A92C22F8C10082C857 /* MyBookingsScreen.swift in Sources */,
 				8F89F2972C22E2640082C857 /* ContentView.swift in Sources */,
 				8F89F2AB2C23434D0082C857 /* HomeScreen.swift in Sources */,
