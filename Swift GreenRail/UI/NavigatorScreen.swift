@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct NavigatorScreen: View {
-    @State private var selectedIndex: Int = 0
+    @State private var selectedIndex: Int = 1
     var body: some View {
         ZStack (alignment: .bottom) {
             TabView(selection: $selectedIndex) {

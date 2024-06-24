@@ -23,8 +23,6 @@ struct MyBookingsScreen: View {
                 List(content: {
                     Text("Item")
                 })
-                .scrollContentBackground(.hidden)
-                .background(.regularMaterial)
                 .toolbarBackground(.clear, for: .navigationBar)
                 .toolbar {
                     ToolbarItem(placement: .topBarLeading) {
@@ -34,7 +32,7 @@ struct MyBookingsScreen: View {
                     }
                 }
             })
-        }.background(.regularMaterial)
+        }
     }
 }
 

@@ -23,7 +23,6 @@ struct PillButtonRowView: View {
         Pill(id: 3, text: "Account", systemIcom: "person")
     ]
     
-//    @State private var selectedPillID: Int = 1
     var body: some View {
         HStack(spacing: 8) {
             ForEach(pills) { pill in
@@ -35,7 +34,7 @@ struct PillButtonRowView: View {
             }
         }
         .padding()
-        .background(.regularMaterial)
+        .background(.ultraThinMaterial)
     }
 }
 
@@ -67,7 +66,7 @@ struct PillButton: View {
     }
     
     private var pillBackground: Color {
-        isSelected ? .green : Color(UIColor.secondarySystemBackground)
+        isSelected ? .green : Color(UIColor.secondarySystemFill)
     }
     
     private var pillForeground: Color {
@@ -94,4 +93,8 @@ struct PillButton: View {
                 .transition(.opacity)
         }
     }
+}
+
+#Preview {
+    NavigatorScreen()
 }
